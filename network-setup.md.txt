@@ -1,0 +1,13 @@
+## Network Setup Documentation
+
+### Devices:
+- **Router**: Cisco 2901 Router
+- **Switch 1**: Cisco 2960 Switch
+- **Switch 2**: Cisco 2960 Switch
+- **PC0**: PC model (assigned IP: 168.90.0.10)
+- **PC1**: PC model (assigned IP: 168.90.0.11)
+- **Laptop**: Laptop model (assigned IP: 168.90.0.12)
+- **Server**: Server model (assigned IP: 168.90.0.13)
+- **Server1**: Server model (assigned IP: 210.3.14.10)
+- **Server2**: Server model (assigned IP: 210.3.14.11)
+- **PC2**: PC model (assigned IP: 210.3.14.12)
