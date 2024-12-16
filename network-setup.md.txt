@@ -14,3 +14,25 @@
 - **PC3**: PC model (assigned IP: 168.90.0.15)
 - **PC4**: PC model (assigned IP: 210.3.14.14)
 
+DHCP Commands
+
+Set Up DHCP:
+1. I created DHCP pool with the ip dhcp pool command: Router(config)# ip dhcp pool Network1
+2. Then I defined the network IP range and assigned it by DHCP: Router(config-dhcp)# network 192.168.1.0 255.255.255.0
+3. I set up a gateaway for DHCP clients: Router(config-dhcp)# default-router 192.168.1.1
+4. And I had to set up DNS server: Router(config-dhcp)# dns-server 8.8.8.8
+
+Verifying the DHCP Configuration:
+1. I check the DHCP bindings: Router# show ip dhcp binding
+2. Also I check the DHCP pool summary: Router# show ip dhcp pool
+3. And DHCP configuration: Router# show running-config | section dhcp
+
+And lastly I had to enable the Routers Interface
+1. Enter inteface configuration mode: Router(config)# interface GigabitEthernet0/0
+2. Assign an IP address to the routers interface: Router(config-if)# ip address 192.168.1.1 255.255.255.0
+3. Enable the interface: Router(config-if)# no shutdown
+
+
+
+
+
